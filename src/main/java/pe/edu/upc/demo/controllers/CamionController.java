@@ -47,7 +47,7 @@ public class CamionController {
 			model.addAttribute("error", e.getMessage());
 		}
 
-		return "/listCamion/frmList";
+		return "/camion/frmList";
 	}
 
 	@RequestMapping("/delete")
@@ -60,7 +60,7 @@ public class CamionController {
 		} catch (Exception e) {
 			model.put("error", e.getMessage());
 		}
-		return "listCamion/frmList";
+		return "camion/frmList";
 	}
 
 }
