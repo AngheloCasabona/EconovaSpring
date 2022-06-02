@@ -32,3 +32,4 @@ public class RegistroServiceImpl implements IRegistroService{
 	}
 	
 }
+
