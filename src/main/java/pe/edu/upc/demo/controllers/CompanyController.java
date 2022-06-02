@@ -65,3 +65,4 @@ public class CompanyController {
 		return "company/frmList";
 	}
 }
+
