@@ -29,6 +29,5 @@ public class serviceServiceImpl implements IserviceService{
 	public void Delete(int idService) {
 		serviceRepository.deleteById(idService);
 	}
-
 	
 }
