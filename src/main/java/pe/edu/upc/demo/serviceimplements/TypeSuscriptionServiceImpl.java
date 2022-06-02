@@ -34,3 +34,4 @@ public class TypeSuscriptionServiceImpl implements ITypeSuscriptionService{
 
 	
 }
+
