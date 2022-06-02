@@ -9,3 +9,4 @@ public interface ITypeSuscriptionService {
 	public List<TypeSuscription> list();
 	public void Delete(int idTypeSuscription);
 }
+
