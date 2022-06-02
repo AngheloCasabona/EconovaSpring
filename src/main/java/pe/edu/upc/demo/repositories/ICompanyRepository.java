@@ -9,3 +9,4 @@ import pe.edu.upc.demo.entities.Empresa;
 public interface ICompanyRepository extends JpaRepository<Empresa, Integer>{
 
 }
+
