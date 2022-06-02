@@ -9,3 +9,4 @@ public interface ICompanyService {
 	public List<Empresa> list();
 	public void delete(int idCompany);
 }
+
