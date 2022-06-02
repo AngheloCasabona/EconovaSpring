@@ -8,4 +8,5 @@ public interface ICamionService {
 	public void Insert(Camion camion);
 	public List<Camion> list();
 	public void delete(int idCamion);
+
 }
