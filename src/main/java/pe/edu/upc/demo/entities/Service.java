@@ -75,8 +75,5 @@ public class Service {
 	public void setQuantityDriver(int quantityDriver) {
 		this.quantityDriver = quantityDriver;
 	}
-	
-	
-	
-	
+
 }
