@@ -70,5 +70,5 @@ public class ListVaccinationController {
 		}
 		return "listvaccination/frmList";
 	}
-
+  
 }
