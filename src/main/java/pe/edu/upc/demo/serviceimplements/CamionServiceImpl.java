@@ -28,5 +28,4 @@ public class CamionServiceImpl implements ICamionService{
 		camionRepository.deleteById(idCamion);
 	}
 
-
 }
