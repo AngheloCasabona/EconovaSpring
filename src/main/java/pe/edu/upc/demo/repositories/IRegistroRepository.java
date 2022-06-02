@@ -9,3 +9,4 @@ import pe.edu.upc.demo.entities.Registro;
 public interface IRegistroRepository extends JpaRepository<Registro, Integer>{
 
 }
+
