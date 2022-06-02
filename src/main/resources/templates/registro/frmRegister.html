@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="master/master :: head">
+<meta charset="UTF-8">
+</head>
+<body>
+	<header th:replace="master/master :: header"></header>
+	<div class="container">
+
+
+
+		<div>
+			<form th:action="@{/registro/save}" th:object="${r}" method="post">
+				<div class="col-sm-12">
+					<label class="form-label">Id: </label> <input type="text"
+						th:field="*{idRegistro}" class="form-control"></input>
+				</div>
+
+				<div class="col-sm-12">
+					<label class="form-label">Usuario: </label> <input type="text"
+						th:field="*{usuario}" class="form-control"></input>
+				</div>
+
+				<div class="col-sm-12">
+					<label class="form-label">Contraseña: </label> <input
+						type="password" th:field="*{contrasena}" class="form-control"></input>
+				</div>
+
+				<div class="col-sm-12">
+					<label class="form-label">Nombre: </label> <input type="text"
+						th:field="*{name}" class="form-control"></input>
+				</div>
+
+				<div class="col-sm-12">
+					<label class="form-label">Apellido: </label> <input type="text"
+						th:field="*{lastname}" class="form-control"></input>
+				</div>
+
+				<div class="col-sm-12">
+					<label class="form-label">Años: </label> <input type="text"
+						th:field="*{age}" class="form-control"></input>
+				</div>
+
+				<div class="col-sm-12">
+					<label class="form-label">Genero: </label> <input type="text"
+						th:field="*{genre}" class="form-control"></input>
+				</div>
+
+				<div class="col-sm-12">
+					<label class="form-label">DNI: </label> <input type="text"
+						th:field="*{DNI}" class="form-control"></input>
+				</div>
+				
+				<div class="col-sm-12">
+					<label class="form-label">Email: </label> <input type="text"
+						th:field="*{email}" class="form-control"></input>
+				</div>
+
+				<div class="col-sm-12">
+					<input type="submit" value="Registrar" class="btn btn-dark"></input>
+				</div>
+
+
+			</form>
+		</div>
+
+
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="master/master :: head">
+<meta charset="UTF-8">
+</head>
+<body>
+	<header th:replace="master/master :: header"></header>
+	<div class="container">
+
+
+
+		<div>
+			<form th:action="@{/service/save}" th:object="${s}" method="post">
+				<div class="col-sm-12">
+					<label class="form-label">Id: </label> <input type="text"
+						th:field="*{idService}" class="form-control"></input>
+				</div>
+
+				<div class="col-sm-12">
+					<label class="form-label">Tipo de Desecho: </label> <input type="text"
+						th:field="*{typewaste}" class="form-control"></input>
+				</div>
+
+				<div class="col-sm-12">
+					<label class="form-label">Fecha Servicio: </label> <input
+						type="date" th:field="*{dateService}" class="form-control"></input>
+				</div>
+
+				<div class="col-sm-12">
+					<label class="form-label">Cantidad de Desecho: </label> <input type="text"
+						th:field="*{quantityWaste}" class="form-control"></input>
+				</div>
+
+				<div class="col-sm-12">
+					<label class="form-label">Cantidad de Conductor: </label> <input type="text"
+						th:field="*{quantityDriver}" class="form-control"></input>
+				</div>
+
+
+				<div class="col-sm-12">
+					<input type="submit" value="Registrar" class="btn btn-dark"></input>
+				</div>
+
+
+			</form>
+		</div>
+
+
+
+	</div>
+</body>
+</html>

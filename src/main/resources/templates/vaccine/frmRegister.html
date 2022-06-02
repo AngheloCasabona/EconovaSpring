@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="master/master :: head">
+<meta charset="UTF-8">
+</head>
+<body>
+	<header th:replace="master/master :: header"></header>
+	<div class="container">
+		
+	
+		
+		<div>
+			<form th:action="@{/vaccine/save}" th:object="${v}" method="post">
+				<div class="col-sm-12">
+					<label class="form-label">Id: </label> <input type="text"
+						th:field="*{idVaccine}" class="form-control"></input>
+				</div>
+
+				<div class="col-sm-12">
+					<label class="form-label">Descripcion: </label> <input type="text"
+						th:field="*{descriptionVaccine}" class="form-control"></input>
+				</div>
+
+				<div class="col-sm-12">
+					<label class="form-label">Fecha de Fabricación: </label> <input type="text"
+						th:field="*{dateFrabication}" class="form-control"></input>
+				</div>
+				<div class="col-sm-12">
+					<label class="form-label">Fecha de Expiración: </label> <input type="text"
+						th:field="*{dateExpiration}" class="form-control"></input>
+				</div>
+
+				<div class="col-sm-12">
+					<input type="submit" value="Registrar" class="btn btn-dark"></input>
+				</div>
+
+
+			</form>
+		</div>
+
+
+
+	</div>
+</body>
+</html>

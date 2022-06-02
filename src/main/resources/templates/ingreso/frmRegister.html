@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="master/master :: head">
+<meta charset="UTF-8">
+</head>
+<body>
+	<header th:replace="master/master :: header"></header>
+	<div class="container">
+
+
+
+		<div>
+			<form th:action="@{/ingreso/save}" th:object="${i}" method="post">
+				<div class="col-sm-12">
+					<label class="form-label">Id de Ingreso: </label> <input type="text"
+						th:field="*{idIngreso}" class="form-control"></input>
+				</div>
+
+				<div class="col-sm-12">
+					<label class="form-label">Usuario: </label> <input type="text"
+						th:field="*{usuario}" class="form-control"></input>
+				</div>
+
+				<div class="col-sm-12">
+					<label class="form-label">Contraseña: </label> <input
+						type="password" th:field="*{contrasena}" class="form-control"></input>
+				</div>
+
+				
+
+
+				<div class="col-sm-12">
+					<input type="submit" value="Registrar" class="btn btn-dark"></input>
+				</div>
+
+
+			</form>
+		</div>
+
+
+
+	</div>
+</body>
+</html>

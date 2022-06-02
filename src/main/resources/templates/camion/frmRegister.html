@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="master/master :: head">
+<meta charset="UTF-8">
+</head>
+<body>
+	<header th:replace="master/master :: header"></header>
+	<div class="container">
+
+
+
+		<div>
+			<form th:action="@{/camion/save}" th:object="${c}" method="post">
+				<div class="col-sm-12">
+					<label class="form-label">Id: </label> <input type="text"
+						th:field="*{idCamion}" class="form-control"></input>
+				</div>
+
+				<div class="col-sm-12">
+					<label class="form-label">Modelo: </label> <input type="text"
+						th:field="*{modeloCamion}" class="form-control"></input>
+				</div>
+
+				<div class="col-sm-12">
+					<label class="form-label">Color: </label> <input type="text"
+						th:field="*{colorCamion}" class="form-control"></input>
+				</div>
+
+				<div class="col-sm-12">
+					<label class="form-label">Placa: </label> <input type="text"
+						th:field="*{placaCamion}" class="form-control"></input>
+				</div>
+
+				<div class="col-sm-12">
+					<label class="form-label">Capacidad: </label> <input type="text"
+						th:field="*{capacidadCamion}" class="form-control"></input>
+				</div>
+
+				<div class="col-sm-12">
+					<input type="submit" value="Register" class="btn btn-dark"></input>
+				</div>
+
+
+			</form>
+		</div>
+
+
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="master/master :: head">
+<meta charset="UTF-8">
+</head>
+<body>
+	<header th:replace="master/master :: header"></header>
+	<div class="container">
+
+
+
+		<div>
+			<form th:action="@{/company/save}" th:object="${c}" method="post">
+				<div class="col-sm-12">
+					<label class="form-label">Id: </label> <input type="text"
+						th:field="*{idCompany}" class="form-control"></input>
+				</div>
+
+				<div class="col-sm-12">
+					<label class="form-label">Name: </label> <input type="text"
+						th:field="*{nameCompany}" class="form-control"></input>
+				</div>
+
+				<div class="col-sm-12">
+					<label class="form-label">RUC: </label> <input type="text"
+						th:field="*{ruCompany}" class="form-control"></input>
+				</div>
+
+				<div class="col-sm-12">
+					<label class="form-label">Phone: </label> <input type="text"
+						th:field="*{phoneCompany}" class="form-control"></input>
+				</div>
+
+				<div class="col-sm-12">
+					<label class="form-label">Address: </label> <input type="text"
+						th:field="*{addressCompany}" class="form-control"></input>
+				</div>
+
+
+				<div class="col-sm-12">
+					<input type="submit" value="Register" class="btn btn-dark"></input>
+				</div>
+
+
+			</form>
+		</div>
+
+
+
+	</div>
+</body>
+</html>
