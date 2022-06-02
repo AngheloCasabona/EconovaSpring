@@ -15,12 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import pe.edu.upc.demo.entities.Invoice;
 import pe.edu.upc.demo.serviceinterface.IinvoiceService;
-
-@Controller
-@RequestMapping("/invoice")
-public class InvoiceController {
-	@Autowired
-	private IinvoiceService invService;
+ 
 
 	@GetMapping("/new")
 	public String newInvoice(Model model) {
@@ -62,5 +57,6 @@ public class InvoiceController {
 		}
 		return "invoice/frmList";
 	}
-
+  
 }
+   
