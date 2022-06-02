@@ -9,3 +9,4 @@ public interface IReportService {
 	public List<Report> list();
 	public void Delete(int idReport);
 }
+  
