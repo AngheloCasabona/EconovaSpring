@@ -62,5 +62,5 @@ public class VaccineController {
 		}
 		return "vaccine/frmList";
 	}
-
+ 
 }
