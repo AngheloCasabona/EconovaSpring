@@ -9,3 +9,4 @@ import pe.edu.upc.demo.entities.Driver;
 public interface IDriverRepository extends JpaRepository<Driver, Integer>{
 
 }
+
