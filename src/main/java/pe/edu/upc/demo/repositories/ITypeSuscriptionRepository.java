@@ -9,3 +9,4 @@ import pe.edu.upc.demo.entities.TypeSuscription;
 public interface ITypeSuscriptionRepository extends JpaRepository<TypeSuscription, Integer>{
 
 }
+
